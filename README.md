@@ -11,6 +11,7 @@ Includes both:
 ───────────────────────────────────────────────
 
 OVERVIEW
+
 ───────────────────────────────────────────────
 
 This project reimplements the core idea of Gblocks: 
@@ -28,8 +29,11 @@ It can:
 • Visualize sequence length reduction in the GUI
 
 ───────────────────────────────────────────────
+
 I. COMMAND-LINE VERSION (gblock.py)
+
 ───────────────────────────────────────────────
+
 
 USAGE EXAMPLES
 --------------
@@ -52,8 +56,11 @@ Key Flags
 --drop_all_gap_columns         (flag)
 
 ───────────────────────────────────────────────
+
 Gblocks-style Integer Parameters
+
 ───────────────────────────────────────────────
+
 Instead of raw ratios, use integers similar to official Gblocks:
 
 python gblock.py --in msa.fasta --out trimmed.fasta \
@@ -69,8 +76,11 @@ Automatic conversion (for N sequences):
   max_gap         = {None:0.0, Half:0.5, All:1.0}
 
 ───────────────────────────────────────────────
+
 II. GUI VERSION (app.py)
+
 ───────────────────────────────────────────────
+
 
 Launch
 -------
@@ -118,8 +128,11 @@ Automatically saves:
   • Optional: raw Gblocks output
 
 ───────────────────────────────────────────────
+
 III. FILE NAMING RULES
+
 ───────────────────────────────────────────────
+
 • Internal mode:
   input_trimmed_m10_g0.5_c0.7_f0.4.fasta
 
@@ -129,8 +142,11 @@ III. FILE NAMING RULES
   Inside it: trimmed files (fasta, txt, mega, etc.)
 
 ───────────────────────────────────────────────
+
 IV. PARAMETER TOOLTIP SUMMARY
+
 ───────────────────────────────────────────────
+
 Internal parameters:
   - 연속된 보존 구간 최소 길이: 얼마나 긴 구간을 블록으로 인정할지
   - gap 허용 정도 (0~1): 칼럼 내 갭 허용 비율
@@ -145,8 +161,11 @@ External (official Gblocks):
   - b5: 갭 허용 정도 (None/Half/All)
 
 ───────────────────────────────────────────────
+
 V. OUTPUT FILES
+
 ───────────────────────────────────────────────
+
 - FASTA: trimmed alignment (original labels)
 - TXT: plain text equivalent
 - MEGA FASTA: sanitized labels for MEGA import
@@ -154,20 +173,28 @@ V. OUTPUT FILES
 - (external only) Gblocks output for reference
 
 ───────────────────────────────────────────────
+
 VI. REQUIREMENTS
+
 ───────────────────────────────────────────────
+
 - Python 3.8+
 - (Optional) MAFFT or MUSCLE v5 for alignment
 - (Optional) Official Gblocks executable (for external mode)
 - GUI dependencies: tkinter, matplotlib
 
 ───────────────────────────────────────────────
+
 VII. LICENSE
+
 ───────────────────────────────────────────────
+
 - Code: MIT License
 - MAFFT, MUSCLE, Gblocks retain their original licenses.
 - Educational / research use encouraged with citation.
 
 ───────────────────────────────────────────────
+
 END OF FILE
+
 ───────────────────────────────────────────────
