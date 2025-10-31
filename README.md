@@ -9,8 +9,10 @@ Includes both:
   2) app.py    — Graphical (GUI) version with tooltips, plots, and official Gblocks integration
 
 ───────────────────────────────────────────────
+
 OVERVIEW
 ───────────────────────────────────────────────
+
 This project reimplements the core idea of Gblocks: 
 retain only well-aligned, conserved blocks from a multiple sequence alignment (MSA).
 
